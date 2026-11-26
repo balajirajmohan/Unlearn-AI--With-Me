@@ -1,0 +1,374 @@
+title: Full-stack AI engineering roadmap
+description: The public teaching sequence for Unlearn AI — With Me.
+privacy: Public educational source. Personal dates, hours, costs, and notes stay in the private workbook.
+phases:
+  - name: Foundations
+    weeks: 1-4
+    outcome: Explain AI systems, write typed Python, and call models directly.
+  - name: AI application development
+    weeks: 5-10
+    outcome: Ship a tested, stateful AI service.
+  - name: RAG engineering
+    weeks: 11-16
+    outcome: Build, evaluate, and secure a cited retrieval system.
+  - name: Agents and LangGraph
+    weeks: 17-22
+    outcome: Build durable workflows with tools, approvals, and tests.
+  - name: MCP
+    weeks: 23-24
+    outcome: Expose safe capabilities through authenticated MCP services.
+  - name: Model development
+    weeks: 25-28
+    outcome: Train, adapt, evaluate, and release a small open model.
+  - name: GPU and inference
+    weeks: 29-34
+    outcome: Profile workloads and serve models with measurable performance.
+  - name: LLMOps and security
+    weeks: 35-38
+    outcome: Trace, evaluate, threat-model, and operate AI systems.
+  - name: Cloud production
+    weeks: 39-42
+    outcome: Deploy managed-model and cloud-native workloads safely.
+  - name: AI platform
+    weeks: 43-44
+    outcome: Build a serving platform with quotas, secrets, and GPU visibility.
+  - name: Capstone
+    weeks: 45-48
+    outcome: Deliver a portfolio-ready Cloud Migration Copilot.
+weeks:
+  - week: 1
+    phase: "Foundations"
+    focus: "AI, ML, deep learning, GenAI, and LLM vocabulary"
+    planned_hours: 8
+    resource: "Generative AI for Everyone"
+    url: "https://www.deeplearning.ai/courses/generative-ai-for-everyone/"
+    deliverable: "Glossary, use-case map, and limits summary"
+  - week: 2
+    phase: "Foundations"
+    focus: "Transformers, attention, embeddings, and tokenization"
+    planned_hours: 9
+    resource: "Karpathy and 3Blue1Brown"
+    url: "https://www.youtube.com/watch?v=zjkBMFhNj_g"
+    deliverable: "Explain the transformer and attention flow"
+  - week: 3
+    phase: "Foundations"
+    focus: "Typed Python, environments, async, Git, and tests"
+    planned_hours: 9
+    resource: "Python and pytest documentation"
+    url: "https://docs.pytest.org/en/stable/"
+    deliverable: "Typed Python package with unit tests and CI"
+  - week: 4
+    phase: "Foundations"
+    focus: "Model APIs, messages, sampling, structured output, and token cost"
+    planned_hours: 9
+    resource: "Generative AI with LLMs"
+    url: "https://www.coursera.org/learn/generative-ai-with-llms"
+    deliverable: "CLI model client with JSON output, latency, and cost"
+  - week: 5
+    phase: "AI application development"
+    focus: "FastAPI, Pydantic, REST endpoints, and dependency injection"
+    planned_hours: 10
+    resource: "FastAPI tutorial"
+    url: "https://fastapi.tiangolo.com/tutorial/first-steps/"
+    deliverable: "Typed AI API with OpenAPI documentation"
+  - week: 6
+    phase: "AI application development"
+    focus: "Async model clients, streaming, retries, timeouts, and rate limits"
+    planned_hours: 10
+    resource: "OpenAI Cookbook"
+    url: "https://github.com/openai/openai-cookbook/tree/main/examples"
+    deliverable: "Resilient streaming model client"
+  - week: 7
+    phase: "AI application development"
+    focus: "Prompt design, structured outputs, and evaluation-driven iteration"
+    planned_hours: 10
+    resource: "Building Systems with the ChatGPT API"
+    url: "https://www.deeplearning.ai/courses/chatgpt-building-system"
+    deliverable: "Prompt suite with automated test cases"
+  - week: 8
+    phase: "AI application development"
+    focus: "Function calling, tool schemas, validation, and error handling"
+    planned_hours: 10
+    resource: "AI Engineer Core Track"
+    url: "https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/"
+    deliverable: "Tool-calling service with validated inputs"
+  - week: 9
+    phase: "AI application development"
+    focus: "PostgreSQL, Redis, conversation state, authentication, and secrets"
+    planned_hours: 10
+    resource: "Full Stack LLM Bootcamp"
+    url: "https://fullstackdeeplearning.com/llm-bootcamp/"
+    deliverable: "Stateful API with persistence and authentication"
+  - week: 10
+    phase: "AI application development"
+    focus: "Full-stack AI product, simple UI, tests, Docker, and CI"
+    planned_hours: 12
+    resource: "AI Engineer Core Track"
+    url: "https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/"
+    deliverable: "Incident Analysis Assistant with UI and automated tests"
+  - week: 11
+    phase: "RAG engineering"
+    focus: "Embeddings, cosine similarity, and retrieval metrics"
+    planned_hours: 9
+    resource: "Vector Database for GenAI"
+    url: "https://kodekloud.com/courses/vector-database-for-genai"
+    deliverable: "Embedding comparison notebook"
+  - week: 12
+    phase: "RAG engineering"
+    focus: "Document ingestion, parsing, cleaning, chunking, and metadata"
+    planned_hours: 10
+    resource: "RAG from Scratch"
+    url: "https://github.com/langchain-ai/rag-from-scratch"
+    deliverable: "Repeatable document ingestion pipeline"
+  - week: 13
+    phase: "RAG engineering"
+    focus: "PostgreSQL and pgvector semantic search"
+    planned_hours: 10
+    resource: "pgvector"
+    url: "https://github.com/pgvector/pgvector"
+    deliverable: "Search API backed by pgvector"
+  - week: 14
+    phase: "RAG engineering"
+    focus: "Hybrid search, reranking, query rewriting, and context compression"
+    planned_hours: 10
+    resource: "Full Stack LLM Bootcamp"
+    url: "https://fullstackdeeplearning.com/llm-bootcamp/"
+    deliverable: "Retrieval benchmark comparing three strategies"
+  - week: 15
+    phase: "RAG engineering"
+    focus: "RAG API with citations, streaming, and insufficient-evidence handling"
+    planned_hours: 10
+    resource: "RAG from Scratch"
+    url: "https://github.com/langchain-ai/rag-from-scratch"
+    deliverable: "Cited RAG service with visible retrieved chunks"
+  - week: 16
+    phase: "RAG engineering"
+    focus: "RAG evaluation, groundedness, prompt injection, and data permissions"
+    planned_hours: 12
+    resource: "Langfuse Academy"
+    url: "https://langfuse.com/academy"
+    deliverable: "Cloud Runbook RAG Assistant with 40 test cases"
+  - week: 17
+    phase: "Agents and LangGraph"
+    focus: "Workflow versus agent; raw tool-calling loop"
+    planned_hours: 9
+    resource: "Building Effective Agents"
+    url: "https://www.anthropic.com/engineering/building-effective-agents"
+    deliverable: "Agent loop with iteration and stopping limits"
+  - week: 18
+    phase: "Agents and LangGraph"
+    focus: "Tool design, idempotency, observations, retries, and failure recovery"
+    planned_hours: 10
+    resource: "AI Engineer Agentic Track"
+    url: "https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/"
+    deliverable: "Agent with reliable read-only tools"
+  - week: 19
+    phase: "Agents and LangGraph"
+    focus: "LangGraph state, nodes, edges, routing, and parallel branches"
+    planned_hours: 10
+    resource: "Introduction to LangGraph"
+    url: "https://academy.langchain.com/courses/intro-to-langgraph"
+    deliverable: "Stateful graph with conditional routing"
+  - week: 20
+    phase: "Agents and LangGraph"
+    focus: "Persistence, memory, checkpoints, and human approval"
+    planned_hours: 10
+    resource: "KodeKloud LangGraph"
+    url: "https://kodekloud.com/courses/langgraph"
+    deliverable: "Durable graph with approval checkpoint"
+  - week: 21
+    phase: "Agents and LangGraph"
+    focus: "Agentic RAG, orchestrator-worker, and multi-agent patterns"
+    planned_hours: 10
+    resource: "AI Engineer Agentic Track"
+    url: "https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/"
+    deliverable: "Agentic RAG workflow with evaluator"
+  - week: 22
+    phase: "Agents and LangGraph"
+    focus: "Agent testing, permissions, sandboxing, and security"
+    planned_hours: 12
+    resource: "Hugging Face Agents Course"
+    url: "https://huggingface.co/learn/agents-course/unit0/introduction"
+    deliverable: "Infrastructure Assessment Agent with safety tests"
+  - week: 23
+    phase: "MCP"
+    focus: "MCP hosts, clients, servers, tools, resources, and transports"
+    planned_hours: 9
+    resource: "Official MCP documentation"
+    url: "https://modelcontextprotocol.io/docs/getting-started/intro"
+    deliverable: "MCP client and local server prototype"
+  - week: 24
+    phase: "MCP"
+    focus: "Remote MCP, authentication, authorization, audit, and threat modelling"
+    planned_hours: 11
+    resource: "Hugging Face MCP Course"
+    url: "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
+    deliverable: "Cloud Operations MCP server with safe tools"
+  - week: 25
+    phase: "Model development"
+    focus: "PyTorch tensors, autograd, training loops, and neural network basics"
+    planned_hours: 10
+    resource: "PyTorch Tutorials"
+    url: "https://docs.pytorch.org/tutorials/"
+    deliverable: "Train and evaluate a small neural network"
+  - week: 26
+    phase: "Model development"
+    focus: "Hugging Face Transformers, tokenizers, datasets, and Trainer"
+    planned_hours: 10
+    resource: "Hugging Face LLM Course"
+    url: "https://huggingface.co/learn/llm-course/chapter1/1"
+    deliverable: "Fine-tune a small transformer with Trainer"
+  - week: 27
+    phase: "Model development"
+    focus: "Dataset preparation, LoRA, QLoRA, and experiment tracking"
+    planned_hours: 12
+    resource: "Hugging Face smol-course"
+    url: "https://huggingface.co/learn/smol-course/unit0/1"
+    deliverable: "QLoRA fine-tuning experiment on a rented GPU"
+  - week: 28
+    phase: "Model development"
+    focus: "Quantization, evaluation, model cards, and responsible release"
+    planned_hours: 11
+    resource: "Hugging Face PEFT"
+    url: "https://huggingface.co/docs/peft/developer_guides/quantization"
+    deliverable: "Quantized model with evaluation report and model card"
+  - week: 29
+    phase: "GPU and inference"
+    focus: "GPU architecture, SMs, Tensor Cores, VRAM, bandwidth, and CUDA execution"
+    planned_hours: 10
+    resource: "GPU MODE lectures"
+    url: "https://github.com/gpu-mode/lectures"
+    deliverable: "GPU architecture notes and memory calculations"
+  - week: 30
+    phase: "GPU and inference"
+    focus: "CUDA Python, nvidia-smi, kernels, memory transfers, and profiling"
+    planned_hours: 12
+    resource: "NVIDIA DLI CUDA Python"
+    url: "https://www.nvidia.com/en-in/training/online/"
+    deliverable: "Accelerate a CPU workload and compare performance"
+  - week: 31
+    phase: "GPU and inference"
+    focus: "PyTorch profiler, mixed precision, torch.compile, and CUDA graphs"
+    planned_hours: 12
+    resource: "PyTorch Performance Tuning"
+    url: "https://docs.pytorch.org/tutorials/recipes/recipes/tuning_guide"
+    deliverable: "Profile and optimise training or inference"
+  - week: 32
+    phase: "GPU and inference"
+    focus: "Inference internals, batching, KV cache, PagedAttention, and quantization"
+    planned_hours: 11
+    resource: "vLLM documentation"
+    url: "https://docs.vllm.ai/en/latest/"
+    deliverable: "Benchmark batch size, memory, and token throughput"
+  - week: 33
+    phase: "GPU and inference"
+    focus: "vLLM, TGI, TensorRT-LLM, TTFT, and TPOT"
+    planned_hours: 12
+    resource: "TensorRT-LLM documentation"
+    url: "https://docs.nvidia.com/tensorrt-llm/index.html"
+    deliverable: "Comparative inference benchmark and API service"
+  - week: 34
+    phase: "GPU and inference"
+    focus: "Kubernetes GPU Operator, scheduling, MIG, MPS, and DCGM monitoring"
+    planned_hours: 12
+    resource: "NVIDIA GPU Operator"
+    url: "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html"
+    deliverable: "GPU workload on Kubernetes with utilization dashboard"
+  - week: 35
+    phase: "LLMOps and security"
+    focus: "Langfuse tracing, sessions, prompts, tokens, latency, and cost"
+    planned_hours: 10
+    resource: "Langfuse Academy"
+    url: "https://langfuse.com/academy"
+    deliverable: "Instrument the RAG and agent applications"
+  - week: 36
+    phase: "LLMOps and security"
+    focus: "Golden datasets, RAG evaluation, LLM-as-judge, and human review"
+    planned_hours: 10
+    resource: "Langfuse Academy"
+    url: "https://langfuse.com/academy"
+    deliverable: "Evaluation suite with at least 60 cases"
+  - week: 37
+    phase: "LLMOps and security"
+    focus: "Prompt injection, PII, tool permissions, and model supply-chain security"
+    planned_hours: 10
+    resource: "OWASP GenAI Security"
+    url: "https://genai.owasp.org/llm-top-10/"
+    deliverable: "Threat model and automated adversarial tests"
+  - week: 38
+    phase: "LLMOps and security"
+    focus: "SLOs, load tests, performance, cost optimization, and regression CI"
+    planned_hours: 11
+    resource: "AI in Production Track"
+    url: "https://www.udemy.com/course/generative-and-agentic-ai-in-production/"
+    deliverable: "Quality, latency, throughput, and cost dashboard"
+  - week: 39
+    phase: "Cloud production"
+    focus: "Model gateways, queues, caching, fallbacks, quotas, and tenant isolation"
+    planned_hours: 10
+    resource: "AI in Production Track"
+    url: "https://www.udemy.com/course/generative-and-agentic-ai-in-production/"
+    deliverable: "Production API with caching and model fallback"
+  - week: 40
+    phase: "Cloud production"
+    focus: "Amazon Bedrock APIs, IAM, VPC access, guardrails, and knowledge bases"
+    planned_hours: 10
+    resource: "Amazon Bedrock documentation"
+    url: "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+    deliverable: "Bedrock application with least-privilege access"
+  - week: 41
+    phase: "Cloud production"
+    focus: "SageMaker training, GPU instance selection, endpoints, and autoscaling"
+    planned_hours: 12
+    resource: "SageMaker AI documentation"
+    url: "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+    deliverable: "Deploy a model endpoint and record cost-performance"
+  - week: 42
+    phase: "Cloud production"
+    focus: "Terraform, CI/CD, canary releases, load tests, rollback, and recovery"
+    planned_hours: 11
+    resource: "AWS Generative AI Learning Plan"
+    url: "https://skillbuilder.aws/learning-plan/5C9XQBTXBB/generative-ai-learning-plan-for-developers-includes-labs/EGATKJP13J"
+    deliverable: "Reproducible cloud deployment pipeline"
+  - week: 43
+    phase: "AI platform"
+    focus: "KServe, Kubeflow, Knative, and model autoscaling"
+    planned_hours: 11
+    resource: "KServe documentation"
+    url: "https://kserve.github.io/website/"
+    deliverable: "Autoscaling inference service and pipeline"
+  - week: 44
+    phase: "AI platform"
+    focus: "Model registry, secrets, quotas, GPU observability, and chargeback"
+    planned_hours: 12
+    resource: "NVIDIA GPU Operator"
+    url: "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html"
+    deliverable: "Reference AI platform with GPU monitoring"
+  - week: 45
+    phase: "Capstone"
+    focus: "Cloud Migration Copilot architecture, data model, API, and threat model"
+    planned_hours: 12
+    resource: "FastAPI documentation"
+    url: "https://fastapi.tiangolo.com/"
+    deliverable: "Architecture, backlog, API contracts, and acceptance tests"
+  - week: 46
+    phase: "Capstone"
+    focus: "UI, RAG, LangGraph agent, and MCP integration"
+    planned_hours: 12
+    resource: "LangGraph documentation"
+    url: "https://langchain-ai.github.io/langgraph/"
+    deliverable: "Working end-to-end full-stack application"
+  - week: 47
+    phase: "Capstone"
+    focus: "Managed-model and self-hosted GPU inference paths"
+    planned_hours: 12
+    resource: "vLLM documentation"
+    url: "https://docs.vllm.ai/en/latest/"
+    deliverable: "Bedrock fallback plus GPU-served open model"
+  - week: 48
+    phase: "Capstone"
+    focus: "Evaluation, security, load testing, optimization, documentation, and demo"
+    planned_hours: 14
+    resource: "Langfuse documentation"
+    url: "https://langfuse.com/docs"
+    deliverable: "Portfolio demo with benchmarks and operations guide"
